@@ -1,0 +1,40 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.hero {
+    .photo_Antarctica {
+        display: flex;
+        img {
+            width: 380.5px;
+            height: 350px;
+        }
+    }
+
+    .card_Antarctica {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .hero {
+        .photo_Antarctica {
+            img {
+                width: 273.5px;
+                height: 266px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        .photo_Antarctica {
+            img {
+                width: 180.5px;
+                height: 181px;
+            }
+        }
+    }
+}

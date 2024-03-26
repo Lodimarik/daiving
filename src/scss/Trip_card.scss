@@ -1,0 +1,27 @@
+@import "./cta.scss";
+@import "./mixins.scss";
+@import "./components/main/photo_Antarctica.scss";
+@import "./components/main/about_Antarctica.scss";
+@import "./components/main/indicative_program.scss";
+@import './components/main/padi.scss';
+@import './components/header/header.scss';
+
+
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+// body {
+//     font-size: 10px;
+//     font-family: "Roboto";
+//     background: linear-gradient(180deg, #00314b 0%, #0083b5 100%);
+// }
+
+.main{
+    .container{
+        margin: 0 auto;
+        padding-top: 7rem;
+        width: 1400px;
+    }
+}

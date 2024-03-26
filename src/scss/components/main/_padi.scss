@@ -1,0 +1,137 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.padi {
+    .title_padi {
+        margin-top: 8.1rem;
+        color: #fff;
+        font-size: $font-size-large;
+        font-weight: 800;
+        line-height: 42px; /* 140% */
+    }
+    .card_padi {
+        display: flex;
+        margin-top: 3.4rem;
+        padding: 2rem;
+        width: 965px;
+        height: 208px;
+        border-radius: 1rem;
+        border: 1px solid rgba(230, 230, 230, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+
+        // &:last-child{
+        //     margin-bottom: 10rem;
+        // }
+
+        .right_content {
+            margin-left: 4.6rem;
+            .top-text {
+                display: flex;
+                .text-left {
+                    .title {
+                        color: $color-text-white;
+                        font-size: 2.4rem;
+                        font-weight: 500;
+                        line-height: 26px; /* 130% */
+                    }
+
+                    .line_padi {
+                        margin-top: 2rem;
+                        width: 389.201px;
+                        height: 1px;
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+
+                    .cost {
+                        margin-top: 1.6rem;
+                        color: $color-text-white;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        line-height: 26px; /* 144.444% */
+                    }
+                }
+                .right-btns {
+                    margin-left: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    .btn_padi {
+                        padding: 1.4rem 7rem;
+                        color: $color-text-red;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 26px; /* 162.5% */
+                        border-radius: 5px;
+                        background: #ffe0e1;
+                    }
+
+                    .btn-padi2 {
+                        margin-top: 1rem;
+                        padding: 1.4rem 7rem;
+
+                        color: $color-text-white;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 26px; /* 162.5% */
+                        border-radius: 5px;
+                        border: 1px solid #fff;
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+
+            .bottom-text {
+                margin-top: 3rem;
+                display: flex;
+                .date {
+                    p {
+                        color: $color-text-white;
+                        font-size: $font-size-small;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                .daiving {
+                    margin-left: 11.1rem;
+                    p {
+                        color: $color-text-white;
+                        font-size: $font-size-small;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .mb {
+        margin-bottom: 10rem;
+    }
+
+    .btn_yet {
+        display: inline-block;
+        margin-left: 61rem;
+        padding: 2rem 5rem;
+        color: #fff;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 1px dashed #fff;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .padi{
+        .card_padi{
+            width: 880px;
+            .left_content{
+                img{
+                    width: 650px;
+                    height: 154px;
+                }
+            }
+        }
+    }
+}

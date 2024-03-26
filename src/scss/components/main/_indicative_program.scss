@@ -1,0 +1,248 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.indicative_program {
+    .title_indicative {
+        margin-top: 5.4rem;
+        color: #fff;
+        font-size: $font-size-large;
+        font-weight: 500;
+    }
+
+    .content_indicative {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+        margin-top: 4.7rem;
+        .left_content {
+            .travel_block {
+                margin-top: 1rem;
+                padding: 1.5rem;
+
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 965px;
+                height: 70px;
+
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background: $backround-transparent-1;
+
+                .content_travel {
+                    display: flex;
+                    align-items: center;
+                    .date {
+                        color: #fff;
+                        padding: 1rem 2rem;
+                        font-size: 1.7rem;
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                    .travel_text {
+                        margin-left: 1rem;
+                        color: #fff;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                    padding: 1.5rem;
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    width: 965px;
+                    height: 165px;
+
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    background: rgba(255, 255, 255, 0.1);
+
+                    .content_travel {
+                        display: flex;
+                        align-items: center;
+                        .date {
+                            color: #fff;
+                            padding: 1rem 2rem;
+                            font-size: 1.7rem;
+                            border-radius: 5px;
+                            background: #fd0207;
+                        }
+                        .travel_text {
+                            margin-left: 1rem;
+                            color: #fff;
+                            font-size: 2rem;
+                            font-weight: 500;
+                            position: relative;
+                        }
+                    }
+
+                    .info_travel {
+                        margin-top: 1rem;
+                        width: 819.968px;
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .right_content {
+            width: 440px;
+            height: 726.716px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            .record {
+                padding: 2.5rem;
+                .content_record {
+                    .title_record {
+                        color: #fff;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    .dotted_line {
+                        margin-top: 3rem;
+                        margin-bottom: 3rem;
+                        width: 340px;
+                        border: 1px dotted #d6d6d6;
+                    }
+
+                    .mail {
+                        margin-top: 3rem;
+                        p {
+                            font-size: $font-size-medium;
+                        }
+                        i {
+                            color: $color-text-red;
+                        }
+                    }
+
+                    .phone {
+                        margin-top: 3rem;
+                        p {
+                            font-size: $font-size-medium;
+                        }
+                        i {
+                            color: $color-text-red;
+                        }
+                    }
+
+                    .btn {
+                        display: block;
+                        color: #fff;
+                        margin-top: 3rem;
+                        padding: 2rem 13rem;
+                        font-size: 1.7rem;
+                        border-radius: $border-radius-main-btn;
+                        background: #fd0207;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.record_cabins {
+    margin-top: 7.7rem;
+    .flex_block {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        column-gap: 2rem;
+        .about_cabin {
+            
+            padding: 1.8rem 3rem;
+            width: 699px;
+            height: 56px;
+            color: $color-text-white;
+            font-size: $font-size-regular;
+            font-weight: 400;
+            line-height: 26px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn_cabin {
+            padding: 2rem 10rem;
+            color: $color-text-red;
+            font-size: $font-size-regular;
+            border-radius: 5px;
+            background: #ffe0e1;
+        }
+    }
+}
+
+@media (max-width:1366px) {
+    .indicative_program{
+            .content_indicative{
+                .left_content{
+                    .travel_block{
+                        width: 880px;
+
+                        &:first-child{
+                            width: 880px;
+                        }
+                    }
+                }
+
+                .right_content{
+                    margin-right: 5rem;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .indicative_program{
+            .content_indicative{
+                flex-direction: column;
+                
+                .left_content{
+                    .travel_block{
+                        width: 880px;
+
+                        &:first-child{
+                            width: 880px;
+                        }
+                    }
+                }
+
+                .right_content{
+                    margin-top: 6rem;
+                    margin-left: 20rem;
+                }
+            }
+        }
+
+        .record_cabins{
+            .flex_block{
+                .about_cabin{
+                    width: 567px;
+                }
+            }
+        }
+    }
+

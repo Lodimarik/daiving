@@ -1,0 +1,122 @@
+@mixin respond-to($media) {
+    @if $media=="phone" {
+        @media (max-width: 375px) {
+            @content;
+        }
+    }
+
+    @else if $media=="tablet" {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+}
+
+//* Использование:
+//   .element {
+//     @include respond-to('phone') {
+//       padding: 10px;
+//     }
+//   }
+@mixin container($max-width: 140rem, $padding: 0 1.5rem) {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $padding;
+    width: 100%;
+
+    @include respond-to("phone") {
+        padding: 0 1rem;
+    }
+}
+
+// //* Использование:
+// .main-container {
+//     @include container();
+// }
+
+@mixin flex-layout($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-layout-center() {
+    display: flex;
+    align-items: $align;
+}
+
+@mixin flex-layout-column($column: column) {
+    display: flex;
+    flex-direction: $column;
+}
+
+@mixin z-index-2() {
+    position: relative;
+    z-index: 2;
+}
+
+// //* Использование:
+// .flex-row {
+//     @include flex-layout(row, space-between, center);
+// }
+
+// .flex-column {
+//     @include flex-layout(column);
+// }
+
+@mixin card-style($bg-color: white, $border-radius: 0.8rem, $padding: 2rem, $box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1)) {
+    background-color: $bg-color;
+    border-radius: $border-radius;
+    padding: $padding;
+    box-shadow: $box-shadow;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+// //* Использование:
+// .card {
+//     @include card-style();
+// }
+
+@mixin card-row($gap: 2rem) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: center;
+
+    .card {
+        margin: $gap / 2;
+        flex-basis: calc(33.333% - #{$gap});
+
+        @include respond-to("tablet") {
+            flex-basis: calc(50% - #{$gap});
+        }
+
+        @include respond-to("phone") {
+            flex-basis: calc(100% - #{$gap});
+        }
+    }
+}
+
+// //* Использование:
+// .cards-row {
+//     @include card-row(30px);
+// }
+
+@mixin responsive-card($max-width: 30rem, $margin: 0 auto) {
+    max-width: $max-width;
+    margin: $margin;
+    width: 100%;
+
+    @include respond-to("tablet") {
+        max-width: 100%;
+    }
+}
+
+//   // Использование:
+//   .responsive-card {
+//     @include responsive-card(250px);
+//   }

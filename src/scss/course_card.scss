@@ -1,0 +1,82 @@
+@import './cta.scss';
+@import './mixins.scss';
+@import './components/main/info_daiving';
+@import './components/header/header.scss';
+@import './components/main/photo_course.scss';
+@import './components/main/record_course.scss';
+
+.header{
+    background-image: url(/src/img/bg/divers-club-crete-hero\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divers_photo{
+    position: relative;
+    .left{
+        img{
+            height: 300px;
+            width: 373px;
+        }
+    }
+    .right{
+        right: 0;
+        bottom: 0;
+        position: absolute;
+
+        .record {
+            background: #FFF;
+            padding: 2.5rem;
+            .content_record {
+                .title_record {
+                    color: #414F5E;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+        
+                p {
+                    margin-top: 1rem;
+                    color: #414F5E;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+                .dotted_line {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                    width: 340px;
+                    border: 1px dotted #d6d6d6;
+                }
+        
+                .mail {
+                    margin-top: 3rem;
+                    p {
+                        font-size: $font-size-medium;
+                    }
+                    i {
+                        color: $color-text-red;
+                    }
+                }
+        
+                .phone {
+                    margin-top: 3rem;
+                    p {
+                        font-size: $font-size-medium;
+                    }
+                    i {
+                        color: $color-text-red;
+                    }
+                }
+        
+                .btn {
+                    display: block;
+                    color: #fff;
+                    margin-top: 3rem;
+                    padding: 2rem 13rem;
+                    font-size: 1.7rem;
+                    border-radius: $border-radius-main-btn;
+                    background: #fd0207;
+                }
+            }
+        }
+    }
+}

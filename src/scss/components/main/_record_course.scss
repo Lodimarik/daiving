@@ -1,0 +1,103 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.record_course {
+    margin-top: 12.2rem;
+    padding: 15rem 15rem;
+    background-image: url(/src/img/bg/389123-svetik\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .title_course {
+        width: 925px;
+        height: 118px;
+        color: $color-text-white;
+        font-size: 4rem;
+        font-weight: 800;
+        span {
+            color: $color-text-white;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+
+    .application {
+        margin-top: 10rem;
+        display: flex;
+        .user_name {
+            display: flex;
+            flex-direction: column;
+            label {
+                color: $color-text-white;
+                font-size: $font-size-regular;
+                font-weight: 700;
+            }
+            .name {
+                margin-top: 2rem;
+                padding: 1.5rem 16.5rem 1.7rem 1rem;
+                color: $color-text-white;
+                font-size: $font-size-regular;
+                font-weight: 400;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                background: rgba(246, 246, 246, 0.15);
+            }
+        }
+
+        .user_phone {
+            margin-left: 2.8rem;
+            display: flex;
+            flex-direction: column;
+            label {
+                color: $color-text-white;
+                font-size: $font-size-regular;
+                font-weight: 700;
+            }
+
+            .phone {
+                margin-top: 2rem;
+                padding: 1.5rem 16.5rem 1.7rem 1rem;
+                color: $color-text-white;
+                font-size: $font-size-regular;
+                font-weight: 400;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                background: rgba(246, 246, 246, 0.15);
+            }
+        }
+
+        .btn {
+            padding: 1.7rem;
+            margin-top: 3.5rem;
+            margin-left: 3rem;
+            width: 254px;
+            height: 57px;
+            color: #fff;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            border-radius: 5px;
+            background: #fd0207;
+        }
+    }
+
+    .user_agreement {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+
+        .agreement {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(246, 246, 246, 0.15);
+        }
+        label {
+             margin-left: 1rem;
+            color: $color-text-white;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+    }
+}

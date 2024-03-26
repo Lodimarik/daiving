@@ -1,0 +1,34 @@
+@import "../../cta.scss";
+@import "../../mixins.scss";
+
+.photo_course {
+    margin-top: 8.1rem;
+    .title_photo {
+        color: $color-text-white;
+        font-size: $font-size-large;
+        font-weight: 700;
+        line-height: 26px; /* 86.667% */
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+
+        .top_img{
+            img{
+                margin-left: 3rem;
+                width: 400px;
+            }
+        }
+
+        .bottom_img{
+            img{
+                margin-left: 2.2rem;
+                width: 300px;
+            }
+        }
+        img{
+            margin-top: 3rem;
+        }
+    }
+}
